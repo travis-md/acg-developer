@@ -14,3 +14,8 @@ sudo service codedeploy-agent status
 
 aws deploy create-application --application-name mywebapp
 aws deploy push --application-name mywebapp --s3-location s3://<MY_BUCKET_NAME>/webapp.zip --ignore-hidden-files
+
+aws deploy push --application-name mywebapp --s3-location s3://cdbucket-morgan/webapp.zip --ignore-hidden-files
+
+
+arn:aws:s3:::cdbucket-morgan
